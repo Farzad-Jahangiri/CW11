@@ -1,15 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CW-11</title>
-    <link rel="stylesheet" href="/bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  </head>
 
-</head>
-<body>
-    
+  <body>
+    <header>
+      <div class="row bg-info">
+        <div class="col">
+          <!-- data -->
+          <div class="row">
+            <p class="col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                width="20"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+              Example@gmail.com
+            </p>
+
+            <p class="col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                width="20"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                />
+              </svg>
+              +982122554499
+            </p>
+          </div>
+        </div>
+        <!-- icon -->
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <svg
+                height="20px"
+                id="Layer_1"
+                style="enable-background: new 0 0 512 512"
+                version="1.1"
+                viewBox="0 0 512 512"
+                width="25px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M346.8,80c22.3,0,43.8,9.3,59,25.6l6.1,6.5l8.7-1.7c4.5-0.9,8.9-1.9,13.3-3.1c-1,1.4-5.7,6.1-11,10.8  c-4.5,4-17.8,16.5-17.8,16.5s13,4.1,21.1,5s17.4-0.6,18.9-0.8c-2.8,2.3-7.8,5.8-10.8,7.9l-7,5.1l0.4,8.6c0.2,3.8,0.3,7.8,0.3,11.8  c0,30.2-5.9,61.8-17,91.5c-11.7,31.2-28.5,59.4-50,83.8c-23,26.1-50.2,46.5-81.1,60.8c-33.8,15.7-71.3,23.6-111.5,23.6  c-28.9,0-57.4-4.8-84.5-14.2c9.9-1.9,19.6-4.6,29.1-7.9c21.7-7.6,41.9-18.7,60.1-33l35.3-27.7l-44.9-0.8  c-26.1-0.5-49.7-13.4-64.3-33.9c7.3-0.5,14.5-1.8,21.5-3.7l60.7-20.2l-61.7-10.9c-29.6-5.9-52.8-27.9-61.3-55.8  c7.8,2,15.4,2.8,23.9,3.3c0,0,31.8,1.4,55.8-0.1c-13-6.2-46.4-29.2-46.4-29.2c-22.5-15.1-36-40.2-36-67.4c0-6.4,0.8-12.8,2.2-19  c21.9,22.4,47,41.1,75.1,55.5c37,19.1,76.9,29.8,118.6,31.9l21.2,1.1l-4.8-20.7c-1.4-5.9-2.1-12.1-2.1-18.5  C265.9,116.3,302.2,80,346.8,80 M346.8,64c-53.5,0-96.8,43.4-96.8,96.9c0,7.6,0.8,15,2.5,22.1C172,179,100.6,140.4,52.9,81.7  c-8.3,14.3-13.1,31-13.1,48.7c0,33.6,17.1,63.3,43.1,80.7C67,210.7,52,206.3,39,199c0,0.4,0,0.8,0,1.2c0,47,33.4,86.1,77.7,95  c-8.1,2.2-16.7,3.4-25.5,3.4c-6.2,0-12.3-0.6-18.2-1.8c12.3,38.5,48.1,66.5,90.5,67.3c-33.1,26-74.9,41.5-120.3,41.5  c-7.8,0-15.5-0.5-23.1-1.4C62.9,432,113.8,448,168.4,448C346.6,448,444,300.3,444,172.2c0-4.2-0.1-8.4-0.3-12.5  c18.9-13.7,35.3-30.7,48.3-50.2c-17.4,7.7-36,12.9-55.6,15.3c20-12,35.4-31,42.6-53.6c-18.7,11.1-39.4,19.2-61.5,23.5  C399.8,75.8,374.6,64,346.8,64L346.8,64z"
+                />
+              </svg>
+            </div>
+            <div class="col">
+              <svg
+                height="20px"
+                width="25px"
+                data-name="Layer 1"
+                id="Layer_1"
+                viewBox="0 0 128 128"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #062b31;
+                      stroke-miterlimit: 10;
+                      stroke-width: 6.5px;
+                    }
+                  </style>
+                </defs>
+                <title />
+                <path
+                  class="cls-1"
+                  d="M53.68,38.26v15.1H37.11V72H53.68v42H73.29V72H90l2-18.63H73.29V38.26c0-2.67,2.11-4,3-4.82,1.57-1.34,9.15-1.55,9.15-1.55h7.43V15a93.26,93.26,0,0,0-11.68-1C53.11,14,53.68,38.26,53.68,38.26Z"
+                />
+              </svg>
+            </div>
+            <div class="col">
+              <svg
+                height="20px"
+                width="25px"
+                data-name="Layer 1"
+                id="Layer_1"
+                viewBox="0 0 128 128"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #062b31;
+                    }
+                  </style>
+                </defs>
+                <title />
+                <path
+                  class="cls-1"
+                  d="M83,23a22,22,0,0,1,22,22V83a22,22,0,0,1-22,22H45A22,22,0,0,1,23,83V45A22,22,0,0,1,45,23H83m0-8H45A30.09,30.09,0,0,0,15,45V83a30.09,30.09,0,0,0,30,30H83a30.09,30.09,0,0,0,30-30V45A30.09,30.09,0,0,0,83,15Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M90.14,32a5.73,5.73,0,1,0,5.73,5.73A5.73,5.73,0,0,0,90.14,32Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M64.27,46.47A17.68,17.68,0,1,1,46.6,64.14,17.7,17.7,0,0,1,64.27,46.47m0-8A25.68,25.68,0,1,0,90,64.14,25.68,25.68,0,0,0,64.27,38.47Z"
+                />
+              </svg>
+            </div>
+            <div class="col">
+              <svg
+                enable-background="new 0 0 32 32"
+                height="20px"
+                version="1.1"
+                viewBox="0 0 32 32"
+                width="25px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g id="LinkedIn">
+                  <path
+                    d="M4.983,8.875H4.94C2.657,8.875,1,7.361,1,5.275c0-2.089,1.692-3.606,4.023-3.606   c2.292,0,3.928,1.476,3.977,3.589C9,7.359,7.311,8.875,4.983,8.875z M5.023,2.669C3.243,2.669,2,3.741,2,5.275   c0,1.531,1.209,2.601,2.94,2.601h0.043C6.76,7.875,8,6.804,8,5.27C7.963,3.694,6.795,2.669,5.023,2.669z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M7.5,29h-5C2.224,29,2,28.776,2,28.5v-18C2,10.224,2.224,10,2.5,10h5C7.776,10,8,10.224,8,10.5v18   C8,28.776,7.776,29,7.5,29z M3,28h4V11H3V28z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M30.5,29h-6c-0.276,0-0.5-0.224-0.5-0.5V19c0-1.654-1.346-3-3-3s-3,1.346-3,3v9.5   c0,0.276-0.224,0.5-0.5,0.5h-6c-0.276,0-0.5-0.224-0.5-0.5v-18c0-0.276,0.224-0.5,0.5-0.5h6c0.276,0,0.5,0.224,0.5,0.5v3.014   c0,0.276-0.224,0.5-0.5,0.5s-0.5-0.224-0.5-0.5V11h-5v17h5v-9c0-2.206,1.794-4,4-4s4,1.794,4,4v9h5V17.5c0-3.584-2.916-6.5-6.5-6.5   c-1.384,0-2.722,0.406-3.871,1.173c-0.229,0.152-0.54,0.092-0.693-0.138s-0.092-0.54,0.139-0.693C20.388,10.464,21.918,10,23.5,10   c4.136,0,7.5,3.364,7.5,7.5v11C31,28.776,30.776,29,30.5,29z"
+                    fill="#263238"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar -->
+      <div class="row bg-warning">
+        <div class="col">
+          <h1>Impact</h1>
+        </div>
+        <div class="col">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <select name="dropdown" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main class="bg-primary">
+      <div class="row">
+        <!-- left side -->
+        <div class="col">
+          <div>
+            <h1>Welcome to impact</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+              beatae itaque. Unde, alias excepturi numquam eveniet dicta magnam
+              neque iste.
+            </p>
+          </div>
+          <div>
+            <button>Get stated</button>
+
+            <span>
+              <i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                  width="20"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                  />
+                </svg>
+              </i>
+              Watch video
+            </span>
+          </div>
+        </div>
+        <!-- rigth side -->
+        <div class="col">
+          <img src="/img/1.png" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- cards -->
+      <div class="row">
+        <div class="col text-center m-2 bg-info card">
+          <i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+              width="50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+              />
+            </svg>
+          </i>
+          <h2>Lorem ipsum</h2>
+        </div>
+
+        <div class="col text-center m-2 bg-info card">
+          <i >
+            <img style="width: 50px; height: 50px;" src="/img/thumb-diamond.png" alt="">
+          </i>
+          <h2>Sed ut perspiciatis</h2>
+        </div>
+
+        <div class="col text-center m-2 bg-info card">
+          <i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+              width="50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+              />
+            </svg>
+          </i>
+          <h2>Magni dolores</h2>
+        </div>
+
+        <div class="col text-center m-2 bg-info card">
+          <i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+              width="50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+              />
+            </svg>
+          </i>
+          <h2>Nemo enim</h2>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <script src="/bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
